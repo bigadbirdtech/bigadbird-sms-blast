@@ -26,5 +26,5 @@ export function validSession(token?: string) {
 }
 
 export async function requireSession() {
-  if (!validSession((await cookies()).get(COOKIE)?.value)) redirect("/login");
+  if (!validSession((await cookies()).get(COOKIE)?.value)) redirect("/sms/login");
 }
