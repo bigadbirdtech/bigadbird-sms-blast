@@ -5,6 +5,7 @@ const BASE = "/sms";
 
 const nextConfig: NextConfig = {
   basePath: BASE,
+  trailingSlash: true,
   env: { NEXT_PUBLIC_BASE: BASE },
   turbopack: {
     rules: { "*.css": { loaders: ["@tailwindcss/turbopack"], as: "*.css" } },
